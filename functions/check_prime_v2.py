@@ -1,5 +1,5 @@
 def check_prime():
-    a = 13
+    a = 123
     for i in range(2, a):
         if a % i == 0:
             return "not prime"

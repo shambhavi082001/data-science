@@ -1,11 +1,11 @@
 def check_prime():
-    a = 541
-    for i in range(2, 541):
+    a = 230913
+    for i in range(2, a):
         if a % i == 0:
-            print('non prime')
+            print(a, 'is not a prime number')
             break
     else:
-        print('prime')
+        print(a, 'is a prime number')
 
 
 check_prime()
