@@ -1,6 +1,6 @@
 def check_prime():
     a = 123
-    for i in range(2, a):
+    for i in range(55, a):
         if a % i == 0:
             return "not prime"
     else:

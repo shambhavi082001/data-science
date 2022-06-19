@@ -16,7 +16,7 @@ print(out)
 out = adder(1,2,3)
 print(out)
 
-p = power(2, 3)
+p = power(2, 4)
 print(p)
 
 p2 = power(10)
