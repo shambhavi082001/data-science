@@ -25,7 +25,6 @@ class Book(Base):
     def __str__ (self):
         return self.title
 
-
 if __name__ == '__main__':
     engine = create_engine('sqlite:///mydb.sqlite', echo=True)
     Base.metadata.create_all(engine)
