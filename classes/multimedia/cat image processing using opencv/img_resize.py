@@ -1,0 +1,13 @@
+import cv2
+img = cv2.imread('C:\data science\classes\multimedia\photo-1608848461950-0fe51dfc41cbcat.jpeg')
+print('original dimension',img.shape)
+scale = 60 #Downscale with resize()
+#scale = 150 upscale with resize()
+width = int(img.shape[1]*scale/100)
+hight = int(img.shape[0]*scale/100)
+dim = (width,hight)
+resized = cv2.resize(img,dim,interpolation=cv2.INTER_AREA)
+print('resized dimension :',resized.shape)
+cv2.imshow('resized image', resized)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
